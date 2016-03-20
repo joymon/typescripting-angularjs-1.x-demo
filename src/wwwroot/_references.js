@@ -1,5 +1,6 @@
 ﻿/// <autosync enabled="true" />
 /// <reference path="../gulpfile.js" />
+/// <reference path="js/core/httpservice.js" />
 /// <reference path="js/countrycontroller.js" />
 /// <reference path="js/worlddatabankmodule.js" />
 /// <reference path="lib/angular/angular.js" />
