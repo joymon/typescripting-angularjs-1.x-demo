@@ -2,9 +2,10 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div ng-app="WorldDataBankApp" id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+<div ng-app="WorldDataBankApp" id="myCarousel" ng-controller="CountryController" 
+     class="carousel slide" data-ride="carousel" data-interval="6000">
     <p>
         If you are seeing answer of below calculation AngularJs works in your machine.
-        <br/>3 + 4 = {{3 + 4}} 
+        <br />3 + 4 = {{3 + 4}}
     </p>
 </div>

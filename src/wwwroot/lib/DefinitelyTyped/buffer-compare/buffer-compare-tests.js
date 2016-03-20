@@ -1,0 +1,22 @@
+/// <reference path="./buffer-compare.d.ts" />
+/// <reference path="../node/node.d.ts" />
+var compare = require('buffer-compare');
+var result;
+result = compare(new Buffer(''), new Buffer(''));
+result = compare([], []);
+result = compare('', '');
+result = compare(new Buffer(''), []);
+result = compare([], '');
+result = compare('', new Buffer(''));
+result = compare(new Buffer(''), new Buffer(''));
+result = compare([], []);
+result = compare('', '');
+result = compare(new Buffer(''), []);
+result = compare([], '');
+result = compare('', new Buffer(''));
+result = compare(new Buffer(''), new Buffer(''));
+result = compare([], []);
+result = compare('', '');
+result = compare(new Buffer(''), []);
+result = compare([], '');
+result = compare('', new Buffer(''));

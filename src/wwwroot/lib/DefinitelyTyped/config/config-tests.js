@@ -1,0 +1,21 @@
+/// <reference path="config.d.ts" />
+var config = require("config");
+var class1 = config;
+var value1 = config.get("");
+var value2 = config.get("");
+var has = config.has("");
+// util tests:
+var extended1 = config.util.extendDeep({}, {});
+var extended2 = config.util.extendDeep({}, {}, 20);
+var clone1 = config.util.cloneDeep({});
+var clone2 = config.util.cloneDeep({}, 20);
+var equals1 = config.util.equalsDeep({}, {});
+var equals2 = config.util.equalsDeep({}, {}, 20);
+var diff1 = config.util.diffDeep({}, {});
+var diff2 = config.util.diffDeep({}, {}, 20);
+var immutable1 = config.util.makeImmutable({});
+var immutable2 = config.util.makeImmutable({}, "");
+var immutable3 = config.util.makeImmutable({}, "", "");
+var hidden1 = config.util.makeHidden({}, "");
+var hidden2 = config.util.makeHidden({}, "", "");
+var env = config.util.getEnv("");

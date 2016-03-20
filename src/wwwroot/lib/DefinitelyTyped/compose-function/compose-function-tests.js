@@ -1,0 +1,12 @@
+/// <reference path="compose-function.d.ts" />
+var numberToNumber = function (a) { return a + 2; };
+var numberToString = function (a) { return "foo"; };
+var stringToNumber = function (a) { return 5; };
+var composeFunction = require("compose-function");
+var t1 = composeFunction(numberToNumber, numberToNumber)(5);
+var t2 = composeFunction(numberToString, numberToNumber)(5);
+var t3 = composeFunction(numberToString, stringToNumber)("f");
+var t4 = composeFunction(function (f) { return (function (p) { return 5; }); }, function (f) { return (function (p) { return 4; }); })(numberToString);
+var t5 = composeFunction(stringToNumber, numberToString, numberToNumber)(5);
+var t6 = composeFunction(numberToString, stringToNumber, numberToString, numberToNumber)(5);
+var t7 = composeFunction(numberToString, numberToNumber, stringToNumber, numberToString, stringToNumber)("fo");

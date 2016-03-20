@@ -1,0 +1,12 @@
+/// <reference path="cldr.js.d.ts" />
+/// <reference path="cldr.js-supplemental.d.ts" />
+var cldr = new Cldr("en");
+var supplemental = cldr.supplemental;
+var supplementalPath = supplemental("plurals-type-cardinal/{languageId}/pluralRule-count-one");
+var supplementalPathByArray = supplemental(["plurals-type-cardinal", "{languageId}/pluralRule-count-one"]);
+var timeData = supplemental.timeData;
+var allowed = timeData.allowed();
+var preferred = timeData.preferred();
+var weekData = supplemental.weekData;
+var firstDay = weekData.firstDay();
+var minDays = weekData.minDays();
