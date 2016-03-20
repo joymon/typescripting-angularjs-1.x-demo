@@ -31,8 +31,8 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    @*<li><a asp-controller="Home" asp-action="About">About</a></li>
+                    <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>*@
                 </ul>
             </div>
         </div>
@@ -50,7 +50,9 @@
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="~/lib/angular/angular.js"></script>
         <script src="~/js/WorldDataBankModule.js" asp-append-version="true"></script>
+        <script src="~/js/Core/HttpService.js" asp-append-version="true"></script>
         <script src="~/js/CountryController.js" asp-append-version="true"></script>
+        <script src="~/js/CountryService.js" asp-append-version="true"></script>
     </environment>
     <environment names="Staging,Production">
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.1.4.min.js"

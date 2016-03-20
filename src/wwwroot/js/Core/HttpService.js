@@ -1,5 +1,5 @@
-var Angular;
-(function (Angular) {
+var WorldDataBank;
+(function (WorldDataBank) {
     var Core;
     (function (Core) {
         "use strict";
@@ -53,5 +53,5 @@ var Angular;
         Core.HttpService = HttpService;
         //angular.module("CountryApp").service("HttpService", HttpService);
         WorldDataBank.WorldDataBankModule.getInstance().registerService("HttpService", HttpService);
-    })(Core = Angular.Core || (Angular.Core = {}));
-})(Angular || (Angular = {}));
+    })(Core = WorldDataBank.Core || (WorldDataBank.Core = {}));
+})(WorldDataBank || (WorldDataBank = {}));
