@@ -9,6 +9,7 @@ A demo application to showcase how to use TypeScript in Angular 1.x applications
 - This use ASP.Net Core, MVC6 for server side
 - At client side, it uses TypeScript 1.6 & AngularJS 1.4
 - Client side packages are managed by Bower. 
+- No databased used. It has some seed data and all the data added will be in the ASP.Net process.
 
 ## Scenarios covered
 - Wrapping Angular module inside TypeSafe class
